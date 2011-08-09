@@ -1,43 +1,43 @@
 (function(w, d){
 
-	// List of resolutions, last update: 07-08-2011 (incomplete)
-	var data = [
-	    {
-	        tab: 'Desktop',
-	        modes: false,
-	        resolutions: [
-	            {desc: '30 inch',    x: 2560, y: 1600},
-	            {desc: '23-28 inch', x: 1920, y: 1280},
-	            {desc: '20-22 inch', x: 1680, y: 1050},
-	            {desc: '17-19 inch', x: 1280, y: 1024},
-	            {desc: '17 inch',    x: 1024, y: 768},
-	            {desc: '15 inch',    x: 800,  y: 600}
-	        ]
-	    }, {
-	        tab: 'Android',
-	        modes: true,
-	        resolutions: [
-	            {desc: 'Tablet: extra large', x: 1280, y: 800},
-	            {desc: 'Tablet: large',       x: 1024, y: 600},
-	            {desc: 'Tablet: average',     x: 800, y: 600},
-	            {desc: 'Tablet: small',       x: 800, y: 480},
-	
-	            {desc: 'Phone: large',   x: 540,  y: 960},
-	            {desc: 'Phone: average', x: 480,  y: 800},
-	            {desc: 'Phone: small',   x: 240,  y: 320}
-	        ]
-	    }, {
-	        tab: 'iOS',
-	        modes: true,
-	        resolutions: [
-	            {desc: 'iPad',       x: 1024, y: 768},
-	            {desc: 'iPhone 4',   x: 640,  y: 960},
-	            {desc: 'iPhone 1-3', x: 320,  y: 480}
-	        ]
-	    }
-	];
+    // List of resolutions, last update: 07-08-2011 (incomplete)
+    var data = [
+        {
+            tab: 'Desktop',
+            modes: false,
+            resolutions: [
+                {desc: '30 inch',    x: 2560, y: 1600},
+                {desc: '23-28 inch', x: 1920, y: 1280},
+                {desc: '20-22 inch', x: 1680, y: 1050},
+                {desc: '17-19 inch', x: 1280, y: 1024},
+                {desc: '17 inch',    x: 1024, y: 768},
+                {desc: '15 inch',    x: 800,  y: 600}
+            ]
+        }, {
+            tab: 'Android',
+            modes: true,
+            resolutions: [
+                {desc: 'Tablet: extra large', x: 1280, y: 800},
+                {desc: 'Tablet: large',       x: 1024, y: 600},
+                {desc: 'Tablet: average',     x: 800, y: 600},
+                {desc: 'Tablet: small',       x: 800, y: 480},
+    
+                {desc: 'Phone: large',   x: 540,  y: 960},
+                {desc: 'Phone: average', x: 480,  y: 800},
+                {desc: 'Phone: small',   x: 240,  y: 320}
+            ]
+        }, {
+            tab: 'iOS',
+            modes: true,
+            resolutions: [
+                {desc: 'iPad',       x: 1024, y: 768},
+                {desc: 'iPhone 4',   x: 640,  y: 960},
+                {desc: 'iPhone 1-3', x: 320,  y: 480}
+            ]
+        }
+    ];
 
-	// Tab html function
+    // Tab html function
     var fillTabHtml = function(tabIndex) {
         var html = '';
         for (var i = 0; i < data[tabIndex].resolutions.length; i++) {
