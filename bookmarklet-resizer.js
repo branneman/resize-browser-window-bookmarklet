@@ -17,20 +17,20 @@
             tab: 'Android',
             modes: true,
             resolutions: [
-                {desc: 'Tablet: extra large', x: 1280, y: 800},
-                {desc: 'Tablet: large',       x: 1024, y: 600},
-                {desc: 'Tablet: average',     x: 800, y: 600},
-                {desc: 'Tablet: small',       x: 800, y: 480},
+                {desc: 'Tablet: extra large', x: 800, y: 1280},
+                {desc: 'Tablet: large',       x: 600, y: 1024},
+                {desc: 'Tablet: average',     x: 600, y: 800},
+                {desc: 'Tablet: small',       x: 480, y: 800},
     
-                {desc: 'Phone: large',   x: 540,  y: 960},
-                {desc: 'Phone: average', x: 480,  y: 800},
-                {desc: 'Phone: small',   x: 240,  y: 320}
+                {desc: 'Phone: large',   x: 540, y: 960},
+                {desc: 'Phone: average', x: 480, y: 800},
+                {desc: 'Phone: small',   x: 240, y: 320}
             ]
         }, {
             tab: 'iOS',
             modes: true,
             resolutions: [
-                {desc: 'iPad',       x: 1024, y: 768},
+                {desc: 'iPad',       x: 768, y: 1024},
                 {desc: 'iPhone 4',   x: 640,  y: 960},
                 {desc: 'iPhone 1-3', x: 320,  y: 480}
             ]
