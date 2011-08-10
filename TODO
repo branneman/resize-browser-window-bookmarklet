@@ -1,0 +1,4 @@
+- switch x and y resolution on checking landscape or portrait mode to match with coming resolution
+- add PPI and ratio column (and maybe make the box a little bigger)
+- add laptop resolutions
+- refactor
