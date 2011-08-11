@@ -1,6 +1,6 @@
 (function(w, d){
 
-    // List of resolutions, last update: 07-08-2011 (incomplete)
+    // List of resolutions, last update: 11-08-2011
     var data = [
         {
             tab: 'Desktop',
@@ -14,25 +14,33 @@
                 {desc: '15 inch',    x: 800,  y: 600}
             ]
         }, {
-            tab: 'Android',
-            modes: true,
+            tab: 'Laptop',
+            modes: false,
             resolutions: [
-                {desc: 'Tablet: extra large', x: 800, y: 1280},
-                {desc: 'Tablet: large',       x: 600, y: 1024},
-                {desc: 'Tablet: average',     x: 600, y: 800},
-                {desc: 'Tablet: small',       x: 480, y: 800},
-    
-                {desc: 'Phone: large',   x: 540, y: 960},
-                {desc: 'Phone: average', x: 480, y: 800},
-                {desc: 'Phone: small',   x: 240, y: 320}
+                {desc: '15-17 inch', x: 1920, y: 1200},
+                {desc: '14-16 inch', x: 1600, y: 1200},
+                {desc: '13-15 inch', x: 1440, y: 900},
+                {desc: '12-15 inch', x: 1280, y: 800}
             ]
         }, {
-            tab: 'iOS',
+            tab: 'Tablet',
             modes: true,
             resolutions: [
-                {desc: 'iPad',       x: 768, y: 1024},
-                {desc: 'iPhone 4',   x: 640,  y: 960},
-                {desc: 'iPhone 1-3', x: 320,  y: 480}
+                {desc: 'iPad',                 x: 768, y: 1024},
+                {desc: 'Android: extra large', x: 800, y: 1280},
+                {desc: 'Android: large',       x: 600, y: 1024},
+                {desc: 'Android: average',     x: 600, y: 800},
+                {desc: 'Android: small',       x: 480, y: 800}
+            ]
+        }, {
+            tab: 'Phone',
+            modes: true,
+            resolutions: [
+                {desc: 'iPhone 4',         x: 640, y: 960},
+                {desc: 'iPhone 1-3',       x: 320, y: 480},
+                {desc: 'Android: large',   x: 540, y: 960},
+                {desc: 'Android: average', x: 480, y: 800},
+                {desc: 'Android: small',   x: 240, y: 320}
             ]
         }
     ];
@@ -74,7 +82,7 @@
         '#bm_resizer ol{margin:0;padding:3px 4px 0}' +
         '#bm_resizer li{background:none}' +
         '#bm_resizer #bm_resizer_tabs{border-top:0;padding-bottom:0}' +
-        '#bm_resizer #bm_resizer_tabs li{display:inline-block;margin-right:5px;padding:2px 5px 0}' +
+        '#bm_resizer #bm_resizer_tabs li{display:inline-block;margin-right:5px;padding:2px 4px 0}' +
         '#bm_resizer #bm_resizer_tabs li.active{border-width:1px 1px 0;border-style:solid;border-color:#ccc}' +
         '#bm_resizer #bm_resizer_tabcontents{margin:0 0 7px;border:1px solid #ccc;font-size:0}' +
         '#bm_resizer #bm_resizer_tabcontents :last-child{margin-bottom:0}' +
